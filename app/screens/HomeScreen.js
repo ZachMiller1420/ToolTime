@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Image, TouchableOpacity, Text } from "react-native";
+import { View, StyleSheet, Image, TouchableOpacity, Text, ScrollView } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import colors from "../config/colors";
 import LargeButton from "../components/LargeButton";
@@ -15,6 +15,7 @@ function HomeScreen({ navigation }) {
   };
 
   return (
+    
     <View style={styles.container}>
       <View style={styles.header}>
         <Image
@@ -29,7 +30,7 @@ function HomeScreen({ navigation }) {
         style={styles.background}
         source={require("../assets/Login.jpeg")}
       />
-
+      
       <TouchableOpacity style={styles.entryButton}>
         <MaterialCommunityIcons
           name="hammer-wrench"
@@ -66,10 +67,12 @@ function HomeScreen({ navigation }) {
         />
         <Text style={styles.tileLower}>View List</Text>
       </TouchableOpacity>
+      
       <View style={styles.logoutContainer}>
         <LargeButton title="LogOut" color="secondary" onPress={handleSignOut} />
       </View>
     </View>
+    
   );
 }
 const styles = StyleSheet.create({
