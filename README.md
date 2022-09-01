@@ -1,6 +1,5 @@
 # ToolTime - Expo React Native Task Keeping App
-
-This project uses a mobile app to keep keep track of task completed on a contruction jobsite for billing information or warranty work. The user can selet a Time, Date, and Job info for each task completed on a jobsite. 
+This mobile app is used to assign tasks completed to job #'s and offers the abiltiy to create a list of tasks that need to be completed. I built the app with React Native CLI and used Expo cross platform framework. The database was set up using google cloud firestore.  
 
 
 ## Acknowledgements
